@@ -261,3 +261,40 @@ nav {
 .price__card__footer .rating {
   color: goldenrod;
 }
+
+.client {
+  background: url('../images/33-bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.client__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.client__card img {
+  max-width: 70px;
+  border-radius: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.client__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.client__card p {
+  color: var(--text-light);
+}
+
+.client__card span {
+  font-size: 3rem;
+  color: var(--text-light);
+}
