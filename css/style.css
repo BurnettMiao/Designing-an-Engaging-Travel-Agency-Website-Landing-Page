@@ -433,3 +433,59 @@ nav {
 .footer__bar .socials span:hover {
   color: var(--text-dark);
 }
+
+@media (width < 900px) {
+  .link:not(.btn) {
+    display: none;
+  }
+
+  .header__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header__image {
+    grid-area: 1/1/2/2;
+  }
+
+  .story__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .story__image {
+    grid-area: 1/1/2/2;
+  }
+
+  .price__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .client__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 600px) {
+  .link {
+    display: none;
+  }
+
+  .price__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .client__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__bar {
+    flex-direction: column;
+  }
+}
